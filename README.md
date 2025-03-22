@@ -94,6 +94,7 @@ Check out [this guide](https://drive.google.com/file/d/1kYKaVNR\_l7Abx2kebs3AdDi
 **Address the following:**
 
 * What are some of the limitations of your model?
+* - EfficientNetB0 takes around 2 hours to train, making iteration and hyperparameter tuning slow
 * What would you do differently with more time/resources?
 * What additional datasets or techniques would you explore?
 
