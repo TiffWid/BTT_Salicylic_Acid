@@ -119,9 +119,31 @@ Check out [this guide](https://drive.google.com/file/d/1kYKaVNR\_l7Abx2kebs3AdDi
 
 ## **📄 References & Additional Resources**
 
-* Cite any relevant papers, articles, or tools used in your project
+**Articles/Books**
+- *“What does ‘fairness’ mean for machine learning systems?”*
+    by Mulligan, Deirdre, et al. 
+    
+    Haas School of Business, University of California Berkeley, 2021. [Link](https://haas.berkeley.edu/wp-content/uploads/What-is-fairness_-EGAL2.pdf)
 
----
+
+
+- *Unmasking AI: My Mission to Protect What Is Human in a World of Machines.*
+    by Buolamwini, Joy.
+    
+    Random House, 2023.
+
+**Tools & Resources**
+- ***TensorFlow and Keras*** for loading and preprocessing images, implementing the EfficientNetB0 architecture, and training the model with custom callbacks
+
+-  ***Scikit-learn*** for scaling metadata features with StandardScaler, hyperparameter tuning using GridSearchCV for the SVM, and evaluating model performance
+
+- ***Pandas*** for feading and preprocessing the training and test datasets and handling metadata columns.
+
+- ***NumPy*** for storing and processing image data as arrays. Also for concatenating PCA-reduced image features with scaled metadata features.
+
+- ***Matplotlib and Seaborn*** for visualizing the distribution of skin conditions using bar plots and generating confusion matrices and other evaluation visualizations.
+
+- ***tqdm*** for providing real-time feedback on the progress of image loading and preprocessing tasks.
 
 
 
