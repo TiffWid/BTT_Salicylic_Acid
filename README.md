@@ -5,8 +5,8 @@
 | Tiffany Widjaja | @tiffanywid |
 | Essie Cheng | @essiecheng | 
 | Cindy Nakhammouane | @cnakha |
-| Ahmed Haj Ahmed | | @905j
-| Jalal-Abdul Yahaya | @AhmedHajAhmed |
+| Ahmed Haj Ahmed | | @AhmedHajAhmed |
+| Jalal-Abdul Yahaya | @905j |
 
 ---
 
@@ -82,7 +82,7 @@ We used .2 test size and a random state of 42 for training the model. Since this
 * How your model performed across different skin tones (AJL)
 * Insights from evaluating model fairness (AJL)
 
-For SVM Model, the accuracy was .28193 and a f1 score of 30.24%, for the CNN model the accuracy was .58976, and a f1 score of 57%. Our model performed overall 14th in the Kaggle Competition. The confusion matrix of our CNN model is shown below. 
+For SVM Model, the accuracy was .28193 and a f1 score of 30.24%, for the CNN model the accuracy was .59443, and a f1 score of 57%. Our model performed overall 14th in the Kaggle Competition. The confusion matrix of our CNN model is shown below. 
 
 ![image](https://github.com/user-attachments/assets/7de4f8a1-3394-45a2-90fa-b4f57fc62e6a)
 
