@@ -5,8 +5,8 @@
 | Tiffany Widjaja | @tiffanywid |
 | Essie Cheng | @essiecheng | 
 | Cindy Nakhammouane | @cnakha |
-| Ahmed Haj Ahmed | |
-| Jalal-Abdul Yahaya | |
+| Ahmed Haj Ahmed | | @905j
+| Jalal-Abdul Yahaya | @AhmedHajAhmed |
 
 ---
 
@@ -38,11 +38,12 @@ This project was created for the Kaggle Competitions Equitable Competition. This
 
 ## **📊 Data Exploration**
 
-  The dataset used was provided by the Kaggle Competition and included a train and test set with 21 different sorted skin conditions and about over 2800 images in total. For data exploration, we counted up the number of images found in each condition and the 7 stages of these conditions. We hot one encoded the skin condition labels and then extracted the prepared the metadata features by filling missing values with 0. 
+  The dataset used was provided by the Kaggle Competition and included a train and test set with 21 different sorted skin conditions and about over 2800 images in total. For data exploration, we counted up the number of images found in each condition and the 7 stages of these conditions. We hot one encoded the skin condition labels and then extracted the prepared the metadata features by filling missing values with 0. For model's data prepartion, we flattened images, PCA to redice dimensions (200 -> 500), use StandardScaler() to scale metadata features, convert labels to ints, initialized GridSearchCV to determine best hyperparamters for SVM, {'C': 10, 'gamma': 'scale', 'kernel': 'rbf'}
   
 ![image](https://github.com/user-attachments/assets/cb795cfc-2851-4d2b-9956-b47052bf4af8)
 
 ![image](https://github.com/user-attachments/assets/8cffd126-73e8-4426-9fd6-473fadf09cd1)
+
 
 ---
 
@@ -54,8 +55,10 @@ This project was created for the Kaggle Competitions Equitable Competition. This
 * Feature selection and Hyperparameter tuning strategies
 * Training setup (e.g., % of data for training/validation, evaluation metric, baseline performance)
 
-The models that we used we the Support Vector Machine (SVM) and EfficientNetB0 model. 
+The models that we used we the Support Vector Machine (SVM) and EfficientNetB0 model. We used the SVM model since one of our team members has had experience with using it. SVMs perform well in high-dimensional spaces, making them suitable for image classification where each pixel can be considered a feature. SVMs can handle both linear and non-linear classification tasks effectively using different kernel functions such as linear, polynomial, radial basis function (RBF), etc. SVMs are advantageous for their simplicity, memory efficiency, and interpretability, but they may not match the performance of deep learning models.
 
+For the EfficientNetb0 CNN model, we choose this since  "is a good choice for image classification due to its high accuracy, efficiency, and suitability for resource-constrained environments. It achieves state-of-the-art results while being smaller and faster than other CNNs"
+"is a convolutional neural network that is trained on more than a million images from the ImageNet database [1]. The network can classify images into 1000 object categories, such as keyboard, mouse, pencil, and many animals. As a result, the network has learned rich feature representations for a wide range of images (Matlab)."
 ---
 
 ## **📈 Results & Key Findings**
@@ -74,13 +77,6 @@ The models that we used we the Support Vector Machine (SVM) and EfficientNetB0 m
 ---
 
 ## **🖼️ Impact Narrative**
-
-**Answer the relevant questions below based on your competition:**
-
-**WiDS challenge:**
-
-1. What brain activity patterns are associated with ADHD; are they different between males and females, and, if so, how?
-2. How could your work help contribute to ADHD research and/or clinical care?
 
 **AJL challenge:**
 
