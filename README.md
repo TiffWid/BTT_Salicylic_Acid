@@ -14,10 +14,14 @@
 
 **Example:**
 
-* Built a SVM and CNN model using \[techniques used\] to solve classifying 16 different skin conditions across diverse skin tones
-* Achieved an F1 score of \[insert score\] and a ranking of 14th on the final Kaggle Leaderboard
-* Used \[explainability tool\] to interpret model decisions
-* Implemented \[data preprocessing method\] to optimize results within compute constraints
+* Built a SVM and CNN model using to solve classifying 16 different skin conditions across diverse skin tones
+* Achieved the following metrics:
+  - Accuracy: 0.5804195804195804
+  - Weighted F1 Score: 0.576784625411958
+  - Mean Absolute Error: 2.770979020979021
+* Ranked 14 out of 74 teams pn the final Kaggle Leaderboard
+* Used sklearn to interpret model decisions
+    from sklearn.metrics import accuracy_score, f1_score, mean_absolute_error, classification_report, confusion_matrix
 
 🔗 [Equitable AI for Dermatology | Kaggle Competition Page](https://www.kaggle.com/competitions/bttai-ajl-2025/overview)
 
