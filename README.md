@@ -65,7 +65,7 @@ For the EfficientNetb0 CNN model, we choose this since is stated to be "a good c
 
 This model took two hours to train, but we used a 20% of the images
 
-**Model 1: Support Vecotr Machine**
+**Model 1: Support Vector Machine**
 
 * Built a Support Vector Mechine Model using image classification and unsupervised learniing to build an inclusive machine learning model for dermatology. Our goal was to train a model that can classify 21 different skin conditions across diverse skin tones, using the datasets provided here in Kaggle.
 * Achieved an F1 score of  0.2856 and a ranking of 14/73 on the final Kaggle Leaderboard
@@ -76,7 +76,7 @@ This model took two hours to train, but we used a 20% of the images
     3.  StandardScaler from sklearn.preprocessing to standradize features
     4.  GridSearchCV to systematically test various parameter combinations and get you the best ones
 
-**Model 2: EfficientNetv0 Convolutional Neural Network **
+**Model 2: EfficientNetv0 Convolutional Neural Network**
 * Built a EfficientNetv0 Convolutional Neural Network using image classification and unsupervised learniing to build an inclusive machine learning model for dermatology. Our goal was to train a model that can classify 21 different skin conditions across diverse skin tones, using the datasets provided here in Kaggle.
 * Achieved an F1 score of 0.576784625411958 and a validation accuracy of 0.5804195804195804
 * Used sklearn.metrics and imported the classification_report to interpret model decisions
@@ -85,6 +85,16 @@ This model took two hours to train, but we used a 20% of the images
 
 **Hyperparamter Tunings and Results**
 
+1. Changed nuerons for image batch to 512 and metadata batch to 64 and the combined batch to 256; changed dropout rate to 0.3 to avoid overfitting; increased batch_size to 32 and decreased epochs to 7
+  - => accuracy: 0.5472028255462646
+
+2. Added a scheduler; back to 10 epochs
+  - => accuracy: Validation Accuracy: 0.5716783404350281
+
+3. Increased epochs to 20
+  - => accuracy: 0.58976
+4. Increased epochs to 40
+  - => accuracy: 0.59443
 
 
 ---
