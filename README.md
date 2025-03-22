@@ -29,8 +29,10 @@
 
 ## **👩🏽‍💻 Setup & Execution**
 
-Clone into Repo using https or ssh
-Open .pynb file and run 
+  - Clone into Repo using https or ssh
+  - Open .pynb file
+  - Download train and test dataset from the Kaggle Link
+  - Run the .pynb file 
 
 ---
 
