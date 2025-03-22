@@ -107,11 +107,13 @@ Check out [this guide](https://drive.google.com/file/d/1kYKaVNR\_l7Abx2kebs3AdDi
 **Address the following:**
 
 * What are some of the limitations of your model?
-EfficientNetb0 takes around 2 hours to train, making iteration and hyperparameter tuning slow
-SVMs generally work better for small-medium sized datasets and don’t scale as well for large datasets as they can be computationally expensive
+  - EfficientNetb0 takes around 2 hours to train, making iteration and hyperparameter tuning slow
+  - SVMs generally work better for small-medium sized datasets and don’t scale as well for large datasets as they can be computationally expensive
 * What would you do differently with more time/resources?
-We could experiment with techniques such as transfer learning and data augmentation to further improve model robustness and better address possible class imbalances (as some skin conditions have fewer training samples)
+  - We could experiment with techniques such as transfer learning and data augmentation to further improve model robustness and better address possible class imbalances (as some skin conditions have fewer training samples)
+  - We could try more hyperparameter tuning strategies (e.g. different activation functions) with more time, or reduce model running time with more hardware resources
 * What additional datasets or techniques would you explore?
+  - Additional datasets include [ISIC Archive](https://www.isic-archive.com/) and [Stanford DDI](https://stanfordaimi.azurewebsites.net/datasets/35866158-8196-48d8-87bf-50dca81df965)
 
 ---
 
