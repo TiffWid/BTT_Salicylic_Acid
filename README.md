@@ -15,7 +15,7 @@
 **Example:**
 
 * Built a SVM and CNN model using \[techniques used\] to solve classifying 16 different skin conditions across diverse skin tones
-* Achieved an F1 score of \[insert score\] and a ranking of 10th on the final Kaggle Leaderboard
+* Achieved an F1 score of \[insert score\] and a ranking of 14th on the final Kaggle Leaderboard
 * Used \[explainability tool\] to interpret model decisions
 * Implemented \[data preprocessing method\] to optimize results within compute constraints
 
@@ -63,41 +63,7 @@ The conclusion is that the best parameters for the scale is C: 10, gamma: scale,
 
 For the EfficientNetb0 CNN model, we choose this since is stated to be "a good choice for image classification due to its high accuracy, efficiency, and suitability for resource-constrained environments. It achieves state-of-the-art results while being smaller and faster than other CNNs" and "is a convolutional neural network that is trained on more than a million images from the ImageNet database [1]. The network can classify images into 1000 object categories, such as keyboard, mouse, pencil, and many animals. As a result, the network has learned rich feature representations for a wide range of images (Matlab)." 
 
-This model took two hours to train, but we used a 20% of the images
-
-**Model 1: Support Vector Machine**
-
-* Built a Support Vector Mechine Model using image classification and unsupervised learniing to build an inclusive machine learning model for dermatology. Our goal was to train a model that can classify 21 different skin conditions across diverse skin tones, using the datasets provided here in Kaggle.
-* Achieved an F1 score of  0.2856 and a ranking of 14/73 on the final Kaggle Leaderboard
-* Used sklearn.metrics and imported the classification_report to interpret model decisions
-* Implemented the following to optimize results within compute constraints:
-    1.  Numpy to flatten the images for SVM
-    2.  Principal component analysis (PCA) to reduce excess noise
-    3.  StandardScaler from sklearn.preprocessing to standradize features
-    4.  GridSearchCV to systematically test various parameter combinations and get you the best ones
-
-**Model 2: EfficientNetv0 Convolutional Neural Network**
-* Built a EfficientNetv0 Convolutional Neural Network using image classification and unsupervised learniing to build an inclusive machine learning model for dermatology. Our goal was to train a model that can classify 21 different skin conditions across diverse skin tones, using the datasets provided here in Kaggle.
-* Achieved an F1 score of 0.576784625411958 and a validation accuracy of 0.5804195804195804
-* Used sklearn.metrics and imported the classification_report to interpret model decisions
-* Implemented the following to optimize results within compute constraints:
-    1.
-
-**Hyperparamter Tunings and Results**
-
-1. Changed nuerons for image batch to 512 and metadata batch to 64 and the combined batch to 256; changed dropout rate to 0.3 to avoid overfitting; increased batch_size to 32 and decreased epochs to 7
-  - => accuracy: 0.5472028255462646
-
-2. Added a scheduler; back to 10 epochs
-  - => accuracy: Validation Accuracy: 0.5716783404350281
-
-3. Increased epochs to 20
-  - => accuracy: 0.58976
-4. Increased epochs to 40
-  - => accuracy: 0.59443
-
-
----
+We used .2 test size and a random state of 42 for training the model. Since this model takes 2 hours to run, we have to rerun the model for every hyperparamter change for tuning. Currently, the best parameters are a scheduler, 20 epochs,dropout rate to .3 and increased batch size to 32. For evaluation, we used accuracy_score and the f1 weighed score. 
 
 ---
 
@@ -110,10 +76,7 @@ This model took two hours to train, but we used a 20% of the images
 * How your model performed across different skin tones (AJL)
 * Insights from evaluating model fairness (AJL)
 
-**Potential visualizations to include:**
-
-* Confusion matrix, precision-recall curve, feature importance plot, prediction distribution, outputs from fairness or explainability tools
-
+For SVM Model, the accuracy was .28193 and a f1 score of 30.24%, for the CNN model the accuracy was .58976, and a f1 score of 57%. Our model performed overall 14th in the Kaggle Competition.
 ---
 
 ## **🖼️ Impact Narrative**
@@ -134,8 +97,10 @@ Check out [this guide](https://drive.google.com/file/d/1kYKaVNR\_l7Abx2kebs3AdDi
 **Address the following:**
 
 * What are some of the limitations of your model?
-* - EfficientNetB0 takes around 2 hours to train, making iteration and hyperparameter tuning slow
+EfficientNetb0 takes around 2 hours to train, making iteration and hyperparameter tuning slow
+SVMs generally work better for small-medium sized datasets and don’t scale as well for large datasets as they can be computationally expensive
 * What would you do differently with more time/resources?
+We could experiment with techniques such as transfer learning and data augmentation to further improve model robustness and better address possible class imbalances (as some skin conditions have fewer training samples)
 * What additional datasets or techniques would you explore?
 
 ---
