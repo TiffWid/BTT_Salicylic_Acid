@@ -44,7 +44,6 @@ This project was created for the Kaggle Competitions Equitable Competition. This
 
 ![image](https://github.com/user-attachments/assets/8cffd126-73e8-4426-9fd6-473fadf09cd1)
 
-
 ---
 
 ## **🧠 Model Development**
@@ -54,6 +53,8 @@ This project was created for the Kaggle Competitions Equitable Competition. This
 * Model(s) used (e.g., CNN with transfer learning, regression models)
 * Feature selection and Hyperparameter tuning strategies
 * Training setup (e.g., % of data for training/validation, evaluation metric, baseline performance)
+
+The models that we used we the Support Vector Machine (SVM) and EfficientNetB0 model. 
 
 ---
 
