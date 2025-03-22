@@ -77,6 +77,7 @@ We used .2 test size and a random state of 42 for training the model. Since this
 * Insights from evaluating model fairness (AJL)
 
 For SVM Model, the accuracy was .28193 and a f1 score of 30.24%, for the CNN model the accuracy was .58976, and a f1 score of 57%. Our model performed overall 14th in the Kaggle Competition.
+
 ---
 
 ## **🖼️ Impact Narrative**
