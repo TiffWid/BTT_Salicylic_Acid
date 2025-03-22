@@ -65,6 +65,27 @@ For the EfficientNetb0 CNN model, we choose this since is stated to be "a good c
 
 This model took two hours to train, but we used a 20% of the images
 
+**Model 1: Support Vecotr Machine**
+
+* Built a Support Vector Mechine Model using image classification and unsupervised learniing to build an inclusive machine learning model for dermatology. Our goal was to train a model that can classify 21 different skin conditions across diverse skin tones, using the datasets provided here in Kaggle.
+* Achieved an F1 score of  0.2856 and a ranking of 14/73 on the final Kaggle Leaderboard
+* Used sklearn.metrics and imported the classification_report to interpret model decisions
+* Implemented the following to optimize results within compute constraints:
+    1.  Numpy to flatten the images for SVM
+    2.  Principal component analysis (PCA) to reduce excess noise
+    3.  StandardScaler from sklearn.preprocessing to standradize features
+    4.  GridSearchCV to systematically test various parameter combinations and get you the best ones
+
+**Model 2: EfficientNetv0 Convolutional Neural Network **
+* Built a EfficientNetv0 Convolutional Neural Network using image classification and unsupervised learniing to build an inclusive machine learning model for dermatology. Our goal was to train a model that can classify 21 different skin conditions across diverse skin tones, using the datasets provided here in Kaggle.
+* Achieved an F1 score of 0.576784625411958 and a validation accuracy of 0.5804195804195804
+* Used sklearn.metrics and imported the classification_report to interpret model decisions
+* Implemented the following to optimize results within compute constraints:
+    1.
+
+**Hyperparamter Tunings and Results**
+
+
 
 ---
 
