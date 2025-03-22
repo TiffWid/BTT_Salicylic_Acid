@@ -25,13 +25,8 @@
 
 ## **👩🏽‍💻 Setup & Execution**
 
-**Provide step-by-step instructions so someone else can run your code and reproduce your results. Depending on your setup, include:**
-
-* How to clone the repository
-* How to install dependencies
-* How to set up the environment
-* How to access the dataset(s)
-* How to run the notebook or scripts
+Clone into Repo using https or ssh
+Open .pynb file and run 
 
 ---
 
@@ -43,15 +38,12 @@ This project was created for the Kaggle Competitions Equitable Competition. This
 
 ## **📊 Data Exploration**
 
-**Describe:**
+  The dataset used was provided by the Kaggle Competition and included a train and test set with 21 different sorted skin conditions and about over 2800 images in total. For data exploration, we counted up the number of images found in each condition and the 7 stages of these conditions. We hot one encoded the skin condition labels and then extracted the prepared the metadata features by filling missing values with 0. 
+  
+![image](https://github.com/user-attachments/assets/cb795cfc-2851-4d2b-9956-b47052bf4af8)
 
-* The dataset(s) used (i.e., the data provided in Kaggle \+ any additional sources)
-* Data exploration and preprocessing approaches
-* Challenges and assumptions when working with the dataset(s)
+![image](https://github.com/user-attachments/assets/8cffd126-73e8-4426-9fd6-473fadf09cd1)
 
-**Potential visualizations to include:**
-
-* Plots, charts, heatmaps, feature visualizations, sample dataset images
 
 ---
 
